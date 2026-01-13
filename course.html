@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>E-Learn</h2>
+    <a href="index.html">⬅ Back to Courses</a>
+</nav>
+
+<section class="course-player">
+    <h1>JavaScript Basics</h1>
+
+    <!-- Video Embed -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/W6NZfCO5SIk"
+                title="Course Video" allowfullscreen></iframe>
+    </div>
+
+    <!-- Progress -->
+    <h3>Your Progress</h3>
+    <div class="progress-bar">
+        <div id="progress"></div>
+    </div>
+    <p id="progress-text">0% Completed</p>
+
+    <button onclick="updateProgress()">Mark Lesson Completed</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
